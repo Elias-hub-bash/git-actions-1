@@ -1,0 +1,13 @@
+name: Shared Actions Examples
+
+on:
+  workflow_dispatch:
+
+jobs:
+  checkout-repo:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: Actions/checkout@v2
+
+      run: ls
